@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/HeaderFlutuante.css">
+    <link rel="stylesheet" href="css/fonte.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body{
+        background-color: white;
+    }
+    
+    .perfildousuario{
+        width: 100%;
+        height: 100%;
+        display: flex;/*fazer animação*/
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .perfildousuario > div{ 
+        width: 100%;
+        display: flex;
+        color: white;
+    }
+
+    .perfilladoesquerdo{
+        width: 50%;
+        background-color: #151515;
+
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .perfilladoesquerdo>i{
+        width: 0px;
+    }
+
+
+
+    .perfilladoesquerdo>h2,h3{
+        margin: 0;
+        font-size: small;
+        text-align: center;
+    }
+
+    .perfilladoesquerdo>h2,h3{
+        padding-top: 25px;
+    }
+
+    .perfilladoesquerdo>h2{
+        padding-bottom: 60px;
+        position: relative;
+    }
+    .perfilladoesquerdo>h2>i{
+        position: absolute;
+        left: 10px;
+    }
+
+
+    .perfilladoesquerdo>div>div{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .perfilladoesquerdo>div::after,h3::after{
+    content: '';
+    height: .1vw;
+    width: 60%;
+    background: #fcfcfc;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 5vw;
+
+}
+    .perfilladoesquerdo>div>div{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .perfilladoesquerdo>div>div>div>select{
+        width: 80px;
+        color: white;
+        border: none;
+        background-color: rgba(245, 245, 245, 0);
+    }
+    .perfilladodireito{
+        width: 50%;
+        background-color: #4E345C;        
+    }
+
+    .perfilladoesquerdo > img{
+        width: 200px;
+        margin: auto;
+    }
+
+    .perfilladodireito>div{
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 30%;
+
+        align-items: start;
+    }
+
+    .perfilladodireito>div>div{
+        position: relative;
+    }
+
+
+
+    .perfilladodireito>div>div>label{
+        position: absolute;
+        right: 2%;
+        top: 4%;
+        cursor: text;
+    }
+
+    .perfilladodireitoinput1,.perfilladodireitoinput2{
+        background-color: rgba(0, 0, 0, 0.205);
+        color: white;
+        border: none;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 15%;
+    }
+
+    .perfilladodireitoinput2{
+        border-radius: 15px;
+        height: 150px;
+        justify-content: start;
+        text-align: top;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <main>
+        <section class="perfildousuario">
+            <div>
+                <div class="perfilladoesquerdo">
+                    
+
+                    
+                    <h2><i class="fa-solid fa-arrow-left fa-lg"></i>Seu Perfil</h2>
+
+                        <img src="img/assets/pessoaroxa.png" alt="">
+
+                    <h3>NOME SOBRENOME</h3>
+                    <div>
+                        <div>
+                            <div>
+                                <label for="paiss">País</label>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                                <select name="" id="paiss">
+                                    <option value="Escolher">Escolher</option>
+                                    <option value="BR">Brasil</option>
+                                    <option value="ARG">Argentina</option>
+                                    <option value="USA">United States</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <label for="paiss2">Idiomas</label>
+                            </div>
+                            <div>
+                                <select name="" id="paiss2">
+                                    <option value="Escolher">ADD</option>
+                                    <option value="PT-BR">Português</option>
+                                    <option value="ES">Espanhol</option>
+                                    <option value="EN">Ingles</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <label for="paiss3">Certificações</label>
+                            </div>
+                            <div>
+                                <select name="" id="paiss3">
+                                    <option value="Escolher">ADD</option>
+                                    <option value="esp1">especialização1</option>
+                                    <option value="esp2">especialização2</option>
+                                    <option value="esp3">especialização3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfilladodireito">
+                    <div>
+                        <div>
+                            <input class="perfilladodireitoinput2" type="text" name="perfilladodireitoinput1for" id="perfilladodireitoinput1for" placeholder="Descrição">
+                            <label for="perfilladodireitoinput1for">EDITAR</label>
+                        </div>
+                        <div>
+                            <input class="perfilladodireitoinput1" type="text" name="perfilladodireitoinput2for" id="perfilladodireitoinput2for" placeholder="Habilidades">
+                            <label for="perfilladodireitoinput2for">EDITAR</label>
+                        </div>
+                        <div>
+                            <input class="perfilladodireitoinput1" type="text" name="perfilladodireitoinput3for" id="perfilladodireitoinput3for" placeholder="Nível de experiencia">
+                            <label for="perfilladodireitoinput3for">EDITAR</label>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </section>
+        
+    </main>
+            
+    <script src="js/script.js"></script>
+</body>
+    </html>

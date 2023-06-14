@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loginmenu{
+    display: none;/*fazer animação*/
+    width: 100%;
+    height: 100%;
+    position: fixed;        
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.loginmenu > div{
+    margin: 10% 25%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+}
+
+.loginimg{
+    padding: 30px 40px 80px 80px;
+    background-image: linear-gradient(to top,#221F1F73,#1E1D1D,#16111157);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.loginimg > img{
+    margin: auto;
+    height: 450px;
+    width: 300px;
+}
+
+.loginform{ 
+    background-image: linear-gradient(to top,#221F1F73,#1E1D1D,#16111157);
+    padding: 30px 80px 20px 40px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.loginform > form{ 
+    height: 100%;
+    width: 100%;
+}
+
+
+.loginform > form > div >label{ 
+    display: block;
+    color: white;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.loginform > form > div > input{ 
+    background-color: #000000;
+    color: white;
+    border: none;
+    height: 60px;
+    width: 450px;
+    border-radius: 20px;
+}
+
+.loginform > form > div > button{ 
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-top: 15%;
+    height: 55px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 2vh;
+    
+    cursor: pointer;
+}
+
+.loginform > form > div > button > a{ 
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.loginbotoes{
+ margin-left: 50%;   
+}
+
+.loginform > form > div > button:hover{
+    transition: 0.5s;
+    background-color: rgba(90, 90, 90, 0.541);
+}
+
+.loginform > form > div > button:active{
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.541);
+}
+
+.loginform > form > a > strong {
+    background-color: black;
+    color: white;
+    border-radius: 3vh;
+    padding: clamp(0.4vw,1em + 0.4vw,0.4vw);
+    margin-left: 0vw;
+}
+
+
+.esqueceusenha{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: right;
+}
+.naotemconta{
+    margin-top: 25px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.abrirlogin{
+    
+    display: block;
+}

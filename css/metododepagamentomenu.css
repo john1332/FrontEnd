@@ -1,0 +1,93 @@
+.metododepagamentomenu{
+    width: 100%;
+    height: 100%;
+    position: fixed;        
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.metododepagamentomenu div{
+    background-color: white;
+}
+.metododepagamentomenu > div{
+    border: 1px solid black;
+    width: 50%;
+    height: auto;
+    padding-bottom: 10%;
+}
+.metododepagamentomenu > div > div{
+    border: 1px solid black;
+    padding: 15px 50px 15px 10px;
+}
+.pagarcomcartao{
+    display: none;
+}
+.pagarcomcartao>div{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.pagarcomcartao>div{
+    display: flex;
+    flex-direction: row;
+}
+
+.pagarcomcartao>div>div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.metododepagamentomenu input{
+    padding: 10px;
+}
+
+.pagarcomcartaoabrir{
+    display: block;
+}
+
+.pagarcomboletopix{
+    display: none;
+}
+.pagarcomboletopix>div{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.pagarcomboletopix>div{
+    display: flex;
+    flex-direction: row;
+}
+
+.pagarcomboletopix>div>div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.metododepagamentomenu input{
+    padding: 10px;
+}
+.pagarcomboletopixabrir{
+    display: block;
+}
+.bolinha{
+    display: flex;
+    justify-content: row;
+}
+.bolinha>div{
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 10px;
+}
+.metododepagamentomenuabrir{
+    display: flex;
+}

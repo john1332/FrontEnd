@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/headerhome.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/telaregistro.css">
+    <link rel="stylesheet" href="/css/telalogin.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/fonte.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/telafreelancerregistro.css">
+
+    <style>
+ *{
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+
+    .botaocadastro button{
+    margin-top: 0px;  
+    }
+
+    .botaologin{
+    margin-top: 0px;
+    }
+    
+    .menuicone{
+        margin-bottom: 10px;
+    }
+
+    
+
+    .navbar{
+        display: flex;
+        padding: 0px;
+        padding-top: 0px;
+        background-color: rgba(0, 0, 0, 0);
+    
+        justify-content: space-between;
+        align-items: center;
+    
+        
+        transition: .3s;
+        
+    }
+
+   
+
+
+
+
+   
+    .conteudoclientefreelancer{
+        background-color:#4E345C;
+        width: 100%;
+        height: 100%;
+    }
+    .conteudoclientefreelancer > div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .informacoesfreelancer{
+        padding-top: 10vh;
+        width: 20%;
+        height: 90vh;
+        background-color: #151515;
+        color: white;
+        text-align: center;
+        
+        
+        
+        
+    }
+    
+    .listarconteiner > img{
+        margin-top: 20px;
+        border-radius: 100%;
+        height: 20vh;
+        width: 10vw;
+    }
+
+    .informacoesfreelancer > p,h4,button{
+        margin-top: 15px;
+    }
+
+    .informacoesfreelancer > h1{
+        margin-top: 20%;
+    }
+
+    .informacoesfreelancer > button{
+        border: none;
+        padding: 5% 10%;
+        border-radius: 30px;
+        color: white;
+        background-color: #00ff087c;
+    }
+
+    .linhahorizontalcentral{
+            margin-top: 20px;
+    }
+
+    .conteudoclientefreelancerlateral{
+        height: 77vh;
+        background-color: #1515159f;
+        width: 90%;
+        
+        margin: 10% 2% 0% 2%;
+        border-radius: 10px;
+       
+    }
+
+    .conteudoclientefreelancerlateraldiv1{
+        
+        display: flex;
+        height: 20%;
+        color: white;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+    .conteudoclientefreelancerlateraldiv2{
+        display: flex;
+        flex-direction: row;
+        height: 80%;
+        
+    }
+    .conteudoclientefreelancerlateraldiv2 > div{
+        width: 50%;
+        border-right: 1px solid rgb(92, 92, 92);
+        border-top: 1px solid rgb(92, 92, 92);
+        color: white;
+        
+    }
+
+    .conteudoclientefreelancerlateraldiv2 > div > h2{
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .conteudoclientefreelancerlateraldiv2 > div > p{
+        height: 50%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;  
+        color: rgba(0, 0, 0, 0.397); 
+        margin: 20px;     
+    }
+
+    .conteudoclientefreelancerlateraldiv2 > div > div{
+        height: 20%;
+        display: flex;
+        justify-content: end;
+        margin-right: 15px;
+        border-right: none;
+               
+    }
+
+    .botaoclientefreelancer{
+        margin-top: 10px;
+        margin-right: 10px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.096);
+        color: white;
+        font-size: clamp(8px, 4px + 1vw, 50px);
+        padding: 1%;
+        letter-spacing: .5px;
+        margin: 2px;
+    }
+
+    .ofertaaceita{
+        background-color:#17720046 ;
+    }
+    .ofertarecusada{
+        background-color:#bc000046 ;    }
+    </style>
+</head>
+<body>
+      <header id="header"> 
+        <nav class="navbar">
+
+                <div class="espacologo">
+                    <div class="menuicone" onclick="menuAbrir()">
+                        <button><img src="img/assets/menu.png" alt=""></button>
+                    </div>
+                    
+                    <div class="logo">
+                        <a href="index.html"><h1>PROJETTUS</h1></a>
+                    </div>
+                </div>
+           
+                
+                <div class="espaco2">
+                    <div class="botaocadastro">
+                        <button onclick="menuCadastroAbrir()"><em>Cadastre-se</em></button>
+                    </div>
+
+
+                    <div >
+                        <button class="carrinho"><a href="Pedidos Pendentes.html"> <img src="img/assets/carrinho.png" alt="" class="imgcarrinho"></a></button>
+                    </div>
+
+
+                    <div>
+                        <button class="notificaçao"><img src="img/assets/notificacao.png" alt="" class="imgnotificaçao"></button>
+                    </div>
+
+                    
+                    <div >
+                        <button class="botaologin" onclick="menuLoginAbrir()"><a href="#" ><img src="img/assets/pessoa.png" alt="" class="imgdim"></a></button>
+                    </div>
+                </div>
+
+        </nav>
+        <div class="menusuperior">
+            <ul>
+                <h2>MENU</h2>
+                <div class="linhasuperior"></div>
+                <li class="navitem"><a href="Catalogos.html" class="navlink">Catalógos</a></li>
+                <li class="navitem"><a href="Configuracoes.html" class="navlink">Configurações</a></li>
+                <li class="navitem"><a href="Configuracoes.html" class="navlink">Suporte</a></li>
+                <li class="navitem"><a href="#" class="navlink">Freelancer</a></li>
+                <li class="navitem"><a href="Pedidos Pendentes.html" class="navlink">Pedidos Pendentes</a></li>
+                <li class="navitem"><a href="Solicite Servico.html" class="navlink">Solicite Serviço</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    
+    <section>
+        <div class="conteudoclientefreelancer">
+            <div>
+                <div class="informacoesfreelancer">
+                    <h1>Informações do freelancer</h1>
+                    <div class="linhahorizontalcentral"></div>
+    
+                    <div class="listarconteiner">
+                        <img src="img/login/boasvindas.png" alt="">
+                    </div>
+                    
+    
+                    <p>Eduardo</p>
+                    <p>Programador</p>
+                    <p>Brasil</p>
+                    <p>Portugues</p>
+                    <p>descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusamus. Temporibus, impedit magni? Vel accusantium pariatur atque neque ut, nemo a modi repellendus illo repudiandae! Commodi culpa distinctio dolores totam. </p>
+                    <div class="linhahorizontalcentral"></div>
+                    <h4>Status do Pedido</h4>
+                    <button>Aceito</button>
+                </div>
+                <div class="conteudoclientefreelancerlateral">
+                    <div class="conteudoclientefreelancerlateraldiv1">
+                        <h1>Serviço</h1>
+                    </div>
+                    <div class="conteudoclientefreelancerlateraldiv2">
+                        <div>
+                            <h2>Você</h2>
+                            <p style="margin-left: 0px;">Aqui tera uma breve descrição do problema que o cliente precisa resolver com máximo de informações possíveis do problema, anexar imagem do problema caso tenha como, etc.” também conterá nome do cliente localização”</p>
+                            <div>
+                                <button class="botaoclientefreelancer ">Salvar</button>
+                                <button class="botaoclientefreelancer ">Editar</button>
+                                <button class="botaoclientefreelancer ">Cancelar</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Freelancer</h2>
+                            <p style="margin-right: 0px;">Aqui tera algo falando sobre custo adicional devido ao problema indicado pelo usuário e horário que o freelancer tem disponível, além de ter algo indicando se o freelancer aceitou o trabalho após ler a descrição do cliente, etc...tera 3 estados: <br> verde: PEDIDO ACEITO <br> amarelo: PEDIDO PENDENTE <br> vermelho: PEDIDO RECUSADO</p>
+                            <div>
+                                <button class="botaoclientefreelancer ofertaaceita">Aceitar Oferta</button>
+                                <button onclick="abrirPedidosPendentesMenu()" class="botaoclientefreelancer ofertarecusada">Recusar Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cadastromenu">
+        <div>
+            <h2>Cadastre-se</h2>
+            <form action="">
+                <div>
+                    <label for="login">Nome de Usuario</label>
+                    <input type="login" name="login" id="login">
+                </div>
+                <div>
+                    <label for="email">e-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="senha" name="senha" id="senha">
+                </div>
+                <div>
+                    <label for="confsenha">Confirmar Senha</label>
+                    <input type="confsenha" name="confsenha" id="confsenha">
+                </div>
+                <div>
+                    <button onclick="menuPreRegistroFreeLancerAbrir(),menuCadastroAbrir()">cadastroFL</button>
+                    <button>Enviar</button>
+                </div>
+        </div>
+        </form>
+
+    </section>
+
+    <section class="loginmenu">
+        <div>
+            <div class="loginimg">
+                <img src="img/login/boasvindas.png" alt="">
+            </div>
+            <div class="loginform">
+                <h2>Login</h2>
+                <form action="">
+                    <div>
+                        <label for="login">E-MAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="senha">SENHA</label>
+                        <input type="senha" name="senha" id="senha">
+                    </div>
+                    <a href="#" class="esqueceusenha">Esqueceu sua senha?</a>
+                    <a href="#" class="naotemconta" onclick="menuLoginAbrir(),menuCadastroAbrir()">não tem uma conta? <strong>CADASTRE-SE</strong></a><!--nao tem a necessidade da tag A arrumar dps-->
+                    <div class="loginbotoes">
+                        <button><a href="perfilC.html">PerfilC</a></button>
+                        <button><a href="perfil.html">PerfilFL</a></button>
+                        <button>Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="freelancerregistroaviso">
+        <div>
+          <div class="registroavisodiv1">
+            <div>
+                <h3 class="registroavisotitulos">TRABALHE DO SEU JEITO</h3>
+            </div>
+            <div>
+                <p class="registroavisotextogeral">VOCÊ TRAZ A HABILIDADE, E <br> NÓS ESTAMOS AQUI PARA <br> OFERECER TODO O SUPORTE <br> NECESSÁRIO PARA QUE VOCÊ <br> ATINJA SEUS OBJETIVOS. <br> JUNTOS, PODEMOS TORNAR <br> SUA JORNADA PARA O SUCESSO <br> EFICIENTE.</p>
+            </div>
+            <div>
+                <p class="registroavisotextogeral">REGISTRE-SE PARA SER UM PRESTADOR DE SERVIÇOS DA  PLATAFORMA.</p>
+            </div>
+          </div>
+          <div class="registroavisodiv2"></div>
+          <div class="registroavisodiv3">
+                <h3 class="registroavisotitulos ">COMO FUNCIONA</h3>
+                <h4 class="registroavisotextogeral registroavisotextogeral2">1. DE SEU SHOW</h4>
+                <p class="registroavisotextogeral registroavisotextogeral2">FAÇA SEU RESGISTRO GRATUITAMENTE, CONFIGURE SEU PERFIL E OFEREÇA SEUS SERVIÇOS AO PUBLICO</p>
+                <h4 class="registroavisotextogeral registroavisotextogeral2">2. ENTREGUE UM OTIMO TRABALHO</h4>
+                <p class="registroavisotextogeral registroavisotextogeral2">RECEBA UMA NOTIICAÇÃO QUANDO SOLICITAREM SEUS SERVIÇOS E USE A PLATAORMA PARA DISCUTIR OS DETALHES COM O CLIENTE</p>
+                <h4 class="registroavisotextogeral registroavisotextogeral2">3. SEJA PAGO</h4>
+                <p class="registroavisotextogeral registroavisotextogeral2">SEJA PAGO NO TEMPO CERTO. QUANDO O SERVIÇO FOR DEVIDAMENTE ENTREGUE O PAGAMENTO FICARA DISPONIVEL PARA RETIRADA</p>
+                <div>
+                    <button onclick="menuPreRegistroFreeLancerAbrir(),menuRegistroFreeLancerAbrir()">Formulario para frelancer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--AQUI TEMOS INFORMAÇÕES REFERENTES A PARTE DE REGISTRO DE FREELANCER-->
+    <section class="freelancerregistro">
+        <div>
+            <div>
+                <h2>REGISTRO PARA FRELANCER</h2>
+            </div>
+            <form action="">
+                <div>
+                    <div class="tamanhodefinido2"><label for="nome">NOME COMPLETO</label></div>
+                        <input type="text" name="nome" id="nome" placeholder="nome"> 
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome"> 
+                </div>
+                <div>
+                    <div class="tamanhodefinido2"><label for="profissao">PROFISSÃO</label></div>
+                    <input type="text" name="profissao" id="profissao" placeholder="Especialização">
+                </div>
+                <div>
+                    <div class="tamanhodefinido2"><label for="decricao">SUA DESCRIÇÃO</label></div>
+                    <input type="text" name="decricao" id="decricao" placeholder="FALE BREVEMENTE SOBRE VOCÊ E SUAS COMPETENCIAS, EXPERIÊNCIAS DE TRABALHO E AFINS">
+                </div>
+                <div>
+                    <div class="tamanhodefinido2"><label for="confsenha">SUA FOTO</label></div>
+                    <div>
+                        <input type="image" src="img/assets/pessoa.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="tamanhodefinido2"><label>Idioma</label></div>
+                    <select name="idioma" id="idioma">
+                        <option value="1">Português</option>
+                        <option value="2">Ingles</option>
+                        <option value="3">Espanhol</option>
+                    </select>
+                    <select name="Fluencia" id="Fluencia">
+                        <option value="1">Basico</option>
+                        <option value="2">Intermediario</option>
+                        <option value="3">Fluente</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

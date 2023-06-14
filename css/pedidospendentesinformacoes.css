@@ -1,0 +1,115 @@
+
+body{
+    background-color: #4E345C;
+}
+
+
+.conteudoclientefreelancer{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.603);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.conteudoclientefreelancerabrir{
+    display: block;
+}
+
+.conteudoclientefreelancer > div{
+    display: flex;
+    flex-direction: row;
+}
+.informacoesfreelancer{
+    width: 16%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+.listarconteiner > img{
+    margin-top: 20px;
+    border-radius: 100%;
+    height: 30vh;
+    width: 15vw;
+}
+
+.informacoesfreelancer > p,h4,button{
+    margin-top: 20px;
+}
+
+.informacoesfreelancer > button{
+    border: none;
+    padding: 5% 10%;
+    border-radius: 30px;
+    color: white;
+    background-color: #00ff087c;
+}
+
+.conteudoclientefreelancerlateral{
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    margin: 3% 5% 3% 5%;
+}
+
+.conteudoclientefreelancerlateraldiv1{
+    display: flex;
+    height: 20%;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.conteudoclientefreelancerlateraldiv2{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+.conteudoclientefreelancerlateraldiv2 > div{
+    width: 50%;
+    border: 1px solid rgb(92, 92, 92);
+    color: white;
+}
+
+.conteudoclientefreelancerlateraldiv2 > div > h2{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+.conteudoclientefreelancerlateraldiv2 > div > p{
+    height: 50%;
+    background-color: rgb(107, 107, 107);
+    display: flex;
+    align-items: center;        
+}
+
+.conteudoclientefreelancerlateraldiv2 > div > div{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;       
+}
+
+.botaoclientefreelancer{
+    background-color: black;
+    color: white;
+    font-size: clamp(8px,4px + 1vw,50px);
+    padding: 1%;
+    letter-spacing: 2px;
+}
+
+.ofertaaceita{
+    background-image: linear-gradient(180deg,#1b8600 ,#29cf0000 );
+}
+.ofertarecusada{
+    background-image: linear-gradient(180deg,#860000 ,#29cf0000 );
+}
+

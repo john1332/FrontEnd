@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/HeaderFlutuante.css">
+    <link rel="stylesheet" href="/css/telaregistro.css">
+    <link rel="stylesheet" href="/css/telalogin.css">
+    <link rel="stylesheet" href="css/fonte.css">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    .pecaporumservico{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+
+    }
+    .pecaporumservico > div{
+        width: 20%;
+        text-align: left;
+    }
+    .pecaporumservico > div > h1,h2,p,input{
+        margin-left: 0;
+        color: black;
+        margin-top: 10px;
+    }
+
+    .pecaporumservico > div > h2{
+        margin-top: 10%;
+    }
+
+    .pecaporumservico > div > input{
+        width: 80%;
+        height: 12%;
+    }
+
+
+
+    </style>
+</head>
+<body style="background-color: white;">
+    <header>
+        <nav class="navbar">
+
+            <div class="menuicone" onclick="menuAbrir()">
+                <button><img src="img/assets/menu.png" alt=""></button>
+            </div>
+            
+            <div class="logo">
+                <a href="index.html"><h1>PROJETTUS</h1></a>
+            </div>
+
+            <div>
+                <button class="botaologin" onclick="menuLoginAbrir()"><a href="#"><img src="img/assets/pessoa.png" alt="" class="imgdim"></a></button>
+            </div>
+
+        </nav>
+        <div class="menusuperior">
+            <ul>
+                <h2>MENU</h2>
+                <div class="linhasuperior"></div>
+                <li class="navitem"><a href="Catalogos.html" class="navlink">Catalógos</a></li>
+                <li class="navitem"><a href="Configuracoes.html" class="navlink">Configurações</a></li>
+                <li class="navitem"><a href="Configuracoes.html" class="navlink">Suporte</a></li>
+                <li class="navitem"><a href="#" class="navlink">Freelancer</a></li>
+                <li class="navitem"><a href="Pedidos Pendentes.html" class="navlink">Pedidos Pendentes</a></li>
+                <li class="navitem"><a href="Solicite Servico.html" class="navlink">Solicite Serviço</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="pecaporumservico">
+            <div>
+                <h1>Peça por um serviço</h1>
+                <p>de algumas informações do seu projeto para que os profissionais venham ate você</p>
+            </div>
+            <div>
+                <h2>Dê um titulo ao briefing </h2>
+                <p>Forneça informações resumidas e fáceis de entender para nos ajudar a categorizar com precisão.</p>
+                <input type="text" name="" id="" placeholder="Exemplo: Criar a logotipo do meu site">
+                <h2>Escolha a categoria</h2>
+                <input type="text" placeholder="qual tipo de profissional voce ira precisar">
+                <h2>o que voce quer q seja feito</h2>
+                <p>Isso ajudara a trazer o melhor profissional ate você. Seja especifico.</p>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <br><br>
+                <h2>Pretendo gastar... </h2>
+                <input type="text" name="" id="" placeholder="Até">
+                <h2>Preciso em...</h2>
+                <input type="datetime-local" name="" id="">
+            </div>
+        </section>
+        <section class="cadastromenu">
+            <div>
+                <h2>Cadastre-se</h2>
+                <form action="">
+                    <div>
+                        <label for="login">LOGIN</label>
+                        <input type="login" name="login" id="login">
+                    </div>
+                    <div>
+                        <label for="email">E-MAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="senha">SENHA</label>
+                        <input type="senha" name="senha" id="senha">
+                    </div>
+                    <div>
+                        <label for="confsenha">CONFIRMAR A SENHA</label>
+                        <input type="confsenha" name="confsenha" id="confsenha">
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+            </div>
+            </form>
+
+        </section>
+
+        <section class="loginmenu">
+            <div>
+                <div class="loginimg">
+                    <img src="img/login/boasvindas.png" alt="">
+                </div>
+                <div class="loginform">
+                    <h2>Login</h2>
+                    <form action="">
+                        <div>
+                            <label for="login">E-MAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="senha">SENHA</label>
+                            <input type="senha" name="senha" id="senha">
+                        </div>
+                        <a href="#" class="esqueceusenha">Esqueceu sua senha?</a>
+                        <a href="#" class="naotemconta" onclick="menuLoginAbrir(),menuCadastroAbrir()">não tem uma conta? <strong>CADASTRE-SE</strong></a><!--nao tem a necessidade da tag A arrumar dps-->
+                        <div>
+                            <button>Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+            
+    <script src="js/script.js"></script>
+</body>
+    </html>

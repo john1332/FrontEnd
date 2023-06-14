@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/HeaderFlutuante.css">
+    <link rel="stylesheet" href="css/fonte.css">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    body{
+        background-color: rgba(184, 0, 0, 0.089);
+    }
+    .conteudoclientefreelancer{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    }
+    .conteudoclientefreelancer > div{
+        display: flex;
+        flex-direction: row;
+    }
+    .informacoesfreelancer{
+        width: 16%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 2%;
+    }
+    
+    .listarconteiner > img{
+        margin-top: 20px;
+        border-radius: 100%;
+        height: 30vh;
+        width: 15vw;
+    }
+
+    .informacoesfreelancer > p,h4,button{
+        margin-top: 20px;
+    }
+
+    .informacoesfreelancer > button{
+        border: none;
+        padding: 5% 10%;
+        border-radius: 30px;
+        color: white;
+        background-color: #00ff087c;
+    }
+
+    .linhahorizontalcentral{
+            margin-top: 20px;
+    }
+
+    .conteudoclientefreelancerlateral{
+        background-color: rgb(0, 0, 0);
+        width: 70%;
+        margin: 3% 5% 3% 5%;
+    }
+
+    .conteudoclientefreelancerlateraldiv1{
+        display: flex;
+        height: 20%;
+        color: white;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .conteudoclientefreelancerlateraldiv2{
+        display: flex;
+        flex-direction: row;
+        height: 80%;
+    }
+    .conteudoclientefreelancerlateraldiv2 > div{
+        width: 50%;
+        border: 1px solid rgb(92, 92, 92);
+        color: white;
+    }
+
+    .conteudoclientefreelancerlateraldiv2 > div > h2{
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .conteudoclientefreelancerlateraldiv2 > div > p{
+        height: 50%;
+        background-color: rgb(107, 107, 107);
+        display: flex;
+        align-items: center;        
+    }
+
+    .conteudoclientefreelancerlateraldiv2 > div > div{
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;       
+    }
+
+    .botaoclientefreelancer{
+        background-color: black;
+        color: white;
+        font-size: clamp(8px,4px + 1vw,50px);
+        padding: 1%;
+        letter-spacing: 2px;
+    }
+
+    .ofertaaceita{
+        background-image: linear-gradient(180deg,#1b8600 ,#29cf0000 );
+    }
+    .ofertarecusada{
+        background-image: linear-gradient(180deg,#860000 ,#29cf0000 );
+    }
+    
+    
+
+    </style>
+</head>
+<body>
+    
+    <main>
+        <section>
+            <div class="conteudoclientefreelancer">
+                <div>
+                    <div class="informacoesfreelancer">
+                        <h1>Informações do freelancer</h1>
+                        <div class="linhahorizontalcentral"></div>
+
+                        <div class="listarconteiner">
+                            <img src="img/login/boasvindas.png" alt="">
+                        </div>
+                        
+
+                        <p>Eduardo</p>
+                        <p>Programador</p>
+                        <p>Brasil</p>
+                        <p>Portugues</p>
+                        <p>descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusamus. Temporibus, impedit magni? Vel accusantium pariatur atque neque ut, nemo a modi repellendus illo repudiandae! Commodi culpa distinctio dolores totam. </p>
+                        <div class="linhahorizontalcentral"></div>
+                        <h4>Status do Pedido</h4>
+                        <button>Aceito</button>
+                    </div>
+                    <div class="conteudoclientefreelancerlateral">
+                        <div class="conteudoclientefreelancerlateraldiv1">
+                            <h1>Serviço</h1>
+                        </div>
+                        <div class="conteudoclientefreelancerlateraldiv2">
+                            <div>
+                                <h2>Você</h2>
+                                <p>Aqui tera uma breve descrição do problema que o cliente precisa resolver com máximo de informações possíveis do problema, anexar imagem do problema caso tenha como, etc.” também conterá nome do cliente localização”</p>
+                                <div>
+                                    <button class="botaoclientefreelancer ">Salvar</button>
+                                    <button class="botaoclientefreelancer ">Editar</button>
+                                    <button class="botaoclientefreelancer ">Cancelar</button>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Freelancer</h2>
+                                <p>Aqui tera algo falando sobre custo adicional devido ao problema indicado pelo usuário e horário que o freelancer tem disponível, além de ter algo indicando se o freelancer aceitou o trabalho após ler a descrição do cliente, etc...tera 3 estados: <br> verde: PEDIDO ACEITO <br> amarelo: PEDIDO PENDENTE <br> vermelho: PEDIDO RECUSADO</p>
+                                <div>
+                                    <button class="botaoclientefreelancer ofertaaceita">Aceitar Oferta</button>
+                                    <button class="botaoclientefreelancer ofertarecusada">Recusar Oferta</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+            
+    <script src="js/script.js"></script>
+</body>
+    </html>

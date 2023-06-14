@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Grafico</title>
+    <link rel="stylesheet" href="/css/HeaderFlutuante.css">
+    <link rel="stylesheet" href="/css/telaregistro.css">
+    <link rel="stylesheet" href="/css/telalogin.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/fonte.css">
+    <style>
+        .caixa{
+            border: solid 1px black;
+            position: relative;
+            padding: 15px;
+            max-width: 90%;
+            margin: auto;
+        }
+        .catalogoshome{
+            margin-left: 0vw;
+            padding-top: 15vh;
+            background-color: #fff;
+            width: auto;
+            height: auto;
+        }
+
+        .catalogoabertologo{
+            display: flex;
+        }
+
+        .catalogoabertologo > h2{
+            margin-top: 100px;
+            margin:auto;
+        }
+        
+        .catalogoabertopessoa{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           margin: 0% 15%;
+        }
+        
+        .catalogoabertopessoa > div{
+           margin-left: 40px;
+           margin-top: 25px;
+        }
+
+        .catalogoabertopessoa > div > div > img{
+            width: 250px;
+            height: 250px;
+        }
+
+        .fora{
+            position:relative;
+        }
+
+        .fora p{
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.637),rgba(0, 0, 0, 0.205) );
+            text-align: center;
+            width: 100%;
+            padding: 0px 0px 10px 0px;
+            border-radius: 0px 0px 10px 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .catalogoabertopessoa > div:hover .fora>p{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="menuicone" onclick="menuAbrir()">
+                <button><img src="img/assets/menu.png" alt=""></button>
+            </div>
+            
+            <div class="logo">
+                <a href="index.html"><h1>PROJETTUS</h1></a>
+            </div>
+
+            <div>
+                <button class="botaologin" onclick="menuLoginAbrir()"><a href="#"><img src="img/assets/pessoa.png" alt=""></a></button>
+            </div>
+
+        </nav>
+        <div class="menusuperior">
+            <ul>
+                <h2>MENU</h2>
+                <div class="linhasuperior"></div>
+                <li class="navitem"><a href="#" class="navlink">Catalógos</a></li>
+                <li class="navitem"><a href="Configuracoes.html" class="navlink">Configurações</a></li>
+                <li class="navitem"><a href="Configuracoes.html" class="navlink">Suporte</a></li>
+                <li class="navitem"><a href="#" class="navlink">Freelancer</a></li>
+                <li class="navitem"><a href="Pedidos Pendentes.html" class="navlink">Pedidos Pendentes</a></li>
+                <li class="navitem"><a href="Solicite Servico.html" class="navlink">Solicite Serviço</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <section class="catalogoaberto">
+            <div class="catalogoabertologo">
+                <h2>Todos Programadores</h2>
+            </div>
+            <div class="catalogoabertopessoa">
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+                <div>
+                    <div class="fora">
+                        <img src="img/login/100_letras.png" alt="">
+                        <p>ADD</p>
+                    </div>
+                    <p>Nome:john</p>
+                    <p>função programador</p>
+                    <p>linkedin</p>
+                    <p>descrição:</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogoshome">
+            
+                
+            
+            <div class="catalogotitulo">
+                <h2>Programação Destaques</h2>
+                <input type="search" name="" id="" placeholder="pesquise algum freelancer pelo nome">
+                <img src="img/assets/lupa.png" alt="">
+            </div>
+            <div class="caixa">
+                
+                <div class="items-wrapper">
+                    <div class="varios-items">
+                        <div>
+                        <img src="img/login/boasvindas.png" alt="Pessoas img" class="item item-corrente">
+                        <p>Nome:matheus</p>
+                        <p>Serviço:Fotógrafo</p>
+                        </div>
+                        <div>
+                        <img src="img/login/100_letras.png" alt="Pessoas img" class="item">
+                        <p>Nome:matheus</p>
+                        <p>Serviço:Fotógrafo</p>
+                        </div>
+                        <div>
+                        <img src="img/login/100_letras.png" alt="Pessoas img" class="item">
+                        <p>Nome:matheus</p>
+                        <p>Serviço:Fotógrafo</p>
+                        </div>
+                        <div>
+                        <img src="img/login/100_letras.png" alt="Pessoas img" class="item">
+                        <p>Nome:matheus</p>
+                        <p>Serviço:Fotógrafo</p>
+                        </div>
+                        <div>
+                        <img src="img/login/100_letras.png" alt="Pessoas img" class="item">
+                        <p>Nome:matheus</p>
+                        <p>Serviço:Fotógrafo</p>
+                        </div>
+                        <div>
+                        <img src="img/login/100_letras.png" alt="Pessoas img" class="item">
+                        <p>Nome:matheus</p>
+                        <p>Serviço:Fotógrafo</p>
+                        </div>
+                        <div>
+                        <img src="img/login/100_letras.png" alt="Pessoas img" class="item">
+                        <p>Nome:matheus</p>
+                        <p>Serviço:Fotógrafo</p>
+                        </div>
+                        <div>
+                        <img src="img/login/100_letras.png" alt="Pessoas img" class="item">
+                        <p>Nome:matheus</p>
+                        <p>Serviço:Fotógrafo</p>
+                        </div>
+                    </div>
+                    <button class="seta-esquerda controle" aria-label="Previous image">◀</button>
+                    <button class="seta-direita controle" aria-label="Next Image">▶</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="cadastromenu">
+            <div>
+                <h2>Cadastre-se</h2>
+                <form action="">
+                    <div>
+                        <label for="login">LOGIN</label>
+                        <input type="login" name="login" id="login">
+                    </div>
+                    <div>
+                        <label for="email">E-MAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="senha">SENHA</label>
+                        <input type="senha" name="senha" id="senha">
+                    </div>
+                    <div>
+                        <label for="confsenha">CONFIRMAR A SENHA</label>
+                        <input type="confsenha" name="confsenha" id="confsenha">
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+            </div>
+            </form>
+
+        </section>
+
+        <section class="loginmenu">
+            <div>
+                <div class="loginimg">
+                    <img src="img/login/boasvindas.png" alt="">
+                </div>
+                <div class="loginform">
+                    <h2>Login</h2>
+                    <form action="">
+                        <div>
+                            <label for="login">E-MAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="senha">SENHA</label>
+                            <input type="senha" name="senha" id="senha">
+                        </div>
+                        <a href="#" class="esqueceusenha">Esqueceu sua senha?</a>
+                        <a href="#" class="naotemconta" onclick="menuLoginAbrir(),menuCadastroAbrir()">não tem uma conta? <strong>CADASTRE-SE</strong></a><!--nao tem a necessidade da tag A arrumar dps-->
+                        <div>
+                            <button>Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

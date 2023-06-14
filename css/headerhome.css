@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    font-family: sans-serif;
+    ;
+    
+
+}
+
+
+
+
+.navbar{
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0);
+
+    justify-content: space-between;
+    align-items: center;
+
+    
+    transition: .3s;
+
+    
+    
+}
+
+.navbar.rolagem{
+    background-color: #000000;
+    transition: .8s;
+    padding-top: 0px;
+    
+    
+}
+
+
+
+.espacologo{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 15px;
+
+}
+
+
+.logo{
+    display: flex;
+    letter-spacing: 4vw;
+    font-size: max(1px, 1vw);
+    padding-left: 25px;
+    
+    
+    
+    
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+.navlink{
+    text-decoration: none;
+    font-size: 1.65rem;
+    color: white;
+}
+
+.espaco2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-right: 15px;
+    
+    
+    
+}
+
+.botaocadastro{
+    padding-right: 20px;
+}
+
+.botaocadastro button{
+    height: 5vh;
+    width: 8vw;
+    border: none;
+    background-color: #8A2E00;
+    border-radius: 6px;
+    box-shadow: 1px 2px 2px #000000;
+    
+    color: #fff;
+    font-size: 1vw;
+    font-weight:lighter;
+    letter-spacing: 1px;
+    
+    cursor: pointer;
+}
+
+.botaocadastro button:hover{
+    background-color: #ca561c;
+   
+}
+
+.carrinho{
+    background-color: transparent;
+    border: none;
+    margin: 0 5px;
+}
+
+.imgcarrinho{
+    width: 4vw;
+}
+
+
+.notificaçao{
+    background-color: transparent;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.notificaçao:hover{
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(90, 90, 90, 0.541);
+}
+
+.imgnotificaçao{
+    width: 4vw;
+}
+
+.botaologin{
+    background-color: rgba(0, 255, 255, 0);
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.botaologin > button:hover{
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(90, 90, 90, 0.541);
+}
+/*importante manter o tamanho do botao um pouco maior ao da img*/
+.botaologin > img{
+    width: 5vw;
+    background-color: transparent;
+    
+   
+}
+
+.imgdim{/*por enquanto é importante pois tem a tag a pra subir a pag na hora que alguem clica no icone de login*/
+    background-color: transparent;
+    width: 2vw;
+    
+
+
+}
+
+.menuicone{
+    z-index: 1;
+}
+
+.menuicone > button{
+    background-color: rgba(233, 10, 10, 0);
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+.menuicone > button > img{
+    width: 2vw;
+
+    
+}
+
+
+
+.menuicone > button:hover{
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(90, 90, 90, 0.541);
+    
+
+}
+
+.menusuperior{
+    position: fixed;
+    top: 0;
+    padding-top: 40px;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    width: 300px;
+    height: 700px;
+    background-color: rgb(15, 15, 15);
+    flex-direction: column;
+    text-align: center;
+    
+
+    
+    padding-bottom: 1rem;
+    display: none;
+    
+}
+
+.menusuperior > ul{
+    list-style: none;
+}
+
+.menusuperior > ul > h2{
+    margin-left: 0px;
+}
+
+.navitem {
+    margin: 0 10px;
+    padding-top: 1.2rem;
+}
+
+.navitem > a:hover{
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(90, 90, 90, 0.541);
+}
+
+.navitem > a:active{
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.541);
+    
+}
+
+.abrir{
+    position: absolute;
+    display: flex;
+transition: .5s;
+
+}
+
+.linhasuperior {
+    margin-top: 10px;
+    margin-left: 10%;
+    width: 80%;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    
+}
+
+

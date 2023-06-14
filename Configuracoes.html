@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="/css/HeaderFlutuante.css">
+    <link rel="stylesheet" href="/css/telaregistro.css">
+    <link rel="stylesheet" href="/css/telalogin.css">
+    <link rel="stylesheet" href="css/confguracoes.css">
+    <link rel="stylesheet" href="css/metododepagamentomenu.css">
+    <link rel="stylesheet" href="css/fonte.css">
+</head>
+<body>
+    
+        <header id="header"> 
+            <nav class="navbar">
+    
+                    <div class="espacologo">
+                        <div class="menuicone" onclick="menuAbrir()">
+                            <button><img src="img/assets/menu.png" alt=""></button>
+                        </div>
+                        
+                        <div class="logo">
+                            <a href="index.html"><h1>PROJETTUS</h1></a>
+                        </div>
+                    </div>
+               
+                    
+                    <div class="espaco2">
+                        <div class="botaocadastro">
+                            <button onclick="menuCadastroAbrir()"><em>Cadastre-se</em></button>
+                        </div>
+    
+    
+                        <div >
+                            <button class="carrinho"><a href="Pedidos Pendentes.html"> <img src="img/assets/carrinho.png" alt="" class="imgcarrinho"></a></button>
+                        </div>
+    
+    
+                        <div>
+                            <button class="notificaçao"><img src="img/assets/notificacao.png" alt="" class="imgnotificaçao"></button>
+                        </div>
+    
+                        
+                        <div >
+                            <button class="botaologin" onclick="menuLoginAbrir()"><a href="#" ><img src="img/assets/pessoa.png" alt="" class="imgdim"></a></button>
+                        </div>
+                    </div>
+    
+            </nav>
+            <div class="menusuperior">
+                <ul>
+                    <h2>MENU</h2>
+                    <div class="linhasuperior"></div>
+                    <li class="navitem"><a href="Catalogos.html" class="navlink">Catalógos</a></li>
+                    <li class="navitem"><a href="Configuracoes.html" class="navlink">Configurações</a></li>
+                    <li class="navitem"><a href="Configuracoes.html" class="navlink">Suporte</a></li>
+                    <li class="navitem"><a href="#" class="navlink">Freelancer</a></li>
+                    <li class="navitem"><a href="Pedidos Pendentes.html" class="navlink">Pedidos Pendentes</a></li>
+                    <li class="navitem"><a href="Solicite Servico.html" class="navlink">Solicite Serviço</a></li>
+                    
+                </ul>
+            </div>
+       
+
+
+        <div class="menusuperior">
+            <ul>
+                <h2>MENU</h2>
+                <div class="linhasuperior"></div>
+                <li class="navitem"><a href="Catalogos.html" class="navlink">Catalógos</a></li>
+                <li class="navitem"><a href="#" class="navlink">Configurações</a></li>
+                <li class="navitem"><a href="#" class="navlink">Suporte</a></li>
+                <li class="navitem"><a href="#" class="navlink">Freelancer</a></li>
+                <li class="navitem"><a href="#" class="navlink">Solicitar Serviço</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <section class="Configuracoes">
+            <div class="coisaslateraisconfig">
+                <h2>CONFIGURAÇÔES</h2>
+                
+                <p onclick="contaAbrir()">Conta</p>
+                <p onclick="notificacoesAbrir()">Notificações</p>
+                <p onclick="segurancaAbrir()">Segurança</p>
+                <p onclick="metododepagamentoAbrir()">Metodos de Pagamento</p>
+                <p onclick="suporteAbrir()">Suporte</p>
+            </div>
+
+            <div class="conta">
+                <form action="">
+                    <div>
+                        <div class="tamanhodefinido"><label for="senha">NOME DE EXIBIÇÃO</label></div>
+                        <input type="senha" name="senha" id="senha" placeholder="Será exibido o nome">
+                    </div>
+                    <div>
+                        <div class="tamanhodefinido"><label for="email">E-MAIL</label></div>
+                        <input type="email" name="email" id="email" placeholder="Será exibido o e-mail">
+                    </div>
+                    <div>
+                        <button>MUDAR SENHA</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+
+            <div class="notificacoes">
+                <div>
+                <h2>Notificações</h2>
+                <div>
+                    <input type="checkbox" name="opcao1" id="opcao1">
+                    <label for="opcao1">Ativa/Desativa Notificações  </label>
+                </div>
+                <div>
+                    
+                    <input type="checkbox" name="opcao2" id="opcao2">
+                    <label for="opcao2">Ativa/Desativa som notificações</label>
+                </div>
+                </div>
+            </div>
+
+            
+            <div class="seguranca">
+                <form action="">
+                    <div>
+                        <div class="tamanhodefinido"><label for="senha">Senha atual</label></div>
+                        <input type="password" name="senha" id="senha" placeholder="Digite a senha atual">
+                    </div>
+                    <div>
+                        <div class="tamanhodefinido"><label for="newpassword">Nova senha</label></div>
+                        <input type="password" name="newpassword" id="newpassword" placeholder="Digite a nova senha">
+                    </div>
+                    <div>
+                        <div class="tamanhodefinido"><label for="newpassword2">Confirmar senha</label></div>
+                        <input type="password" name="newpassword2" id="newpassword2" placeholder="Digite a nova senha novamente">
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+
+            <div class="metododepagamento">
+                <div>
+                    
+                    <h2>Métodos de Pagamento</h2>
+                    <div>
+                        <button onclick="abrirMetodoPagamentoMenu()">Adicionar método de pagamento</button>
+                    </div>
+                    <img src="img/assets/imgpagamentos.png" alt="">
+                    <h3>Ainda não há métodos de pagamento selecionado.</h3>
+                    <p>Quer fazer o check-out com facilidade? Da próxima vez que você pedir um serviço,
+                        salve sua forma de pagamento.</p>
+                    
+                </div>
+            </div>
+
+            <div class="suporte">
+                <div>
+                    <div>
+                        <h2>Do que você precisa?</h2>
+                        <div><input type="search" name="" id="" placeholder="pesquise aqui"></div>
+                    </div>
+                    <h3>Contate-nos</h3>
+                    <p>E-mail:Contatoprojettus@gmail.com</p>
+                    <p>(61)99999-9999</p>
+                </div>
+            </div>
+                
+
+        </section>
+
+        <section class="metododepagamentomenu">
+            <div>
+                <div>
+                    <h3>Formas de pagamento</h3>
+                    <Button onclick="abrirMetodoPagamentoMenu()">VOLTAR</Button>
+                </div>
+                    <div class="bolinha" onclick="pagarComCartaoAbrir()">
+                        <div></div>
+                        <h3>Cartoes de credito e debito</h3>
+                    </div>
+                <div class="pagarcomcartao">
+                    <div>
+                        <div>
+                            <label for="">Número do cartão</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div>
+                            <label for="">Data de Validade</label>
+                            <input type="text" name="" id="" placeholder="MM/AA">
+                        </div>
+                        <div>
+                            <label for="">Cod. de Segurança</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">Nome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div>
+                            <label for="">Sobrenome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">CPF/CNPJ</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="bolinha" onclick="pagarComBoletoPixAbrir()">
+                    <div></div>
+                    <h3>Boleto/pix</h3>
+                </div>
+                <div class="pagarcomboletopix">
+                    <div>
+                        <div>
+                            <label for="">Nome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div>
+                            <label for="">Sobrenome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">CPF/CNPJ</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">Enviar boleto/pix para meu email  </label>
+                            <input type="text" name="" id="" placeholder="Digite seu endereço de e-mail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cadastromenu">
+            <div>
+                <h2>Cadastre-se</h2>
+                <form action="">
+                    <div>
+                        <label for="login">LOGIN</label>
+                        <input type="login" name="login" id="login">
+                    </div>
+                    <div>
+                        <label for="email">E-MAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="senha">SENHA</label>
+                        <input type="senha" name="senha" id="senha">
+                    </div>
+                    <div>
+                        <label for="confsenha">CONFIRMAR A SENHA</label>
+                        <input type="confsenha" name="confsenha" id="confsenha">
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+            </div>
+            </form>
+
+        </section>
+
+        <section class="loginmenu">
+            <div>
+                <div class="loginimg">
+                    <img src="img/login/boasvindas.png" alt="">
+                </div>
+                <div class="loginform">
+                    <h2>Login</h2>
+                    <form action="">
+                        <div>
+                            <label for="login">E-MAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="senha">SENHA</label>
+                            <input type="senha" name="senha" id="senha">
+                        </div>
+                        <a href="#" class="esqueceusenha">Esqueceu sua senha?</a>
+                        <a href="#" class="naotemconta" onclick="menuLoginAbrir(),menuCadastroAbrir()">não tem uma conta? <strong>CADASTRE-SE</strong></a><!--nao tem a necessidade da tag A arrumar dps-->
+                        <div>
+                            <button>Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/configuracao.js"></script>
+</body>
+</html>

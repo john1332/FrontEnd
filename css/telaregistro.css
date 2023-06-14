@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.cadastromenu{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: fixed;        
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;/*fazer animação*/
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.cadastromenu > div{ 
+    padding: 20px 40px 20px 40px;
+    background-image: linear-gradient(to top,rgb(32, 32, 32),rgb(32, 32, 32),rgb(19, 18, 18));
+    border-radius: 15px;
+}
+
+.cadastromenu div > form{ 
+    height: 100%;
+    width: 100%;
+}
+
+.cadastromenu div > form > div >label{ 
+    display: block;
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.cadastromenu div > form > div > input{ 
+    background-color: #000000;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.cadastromenu div > form > div > button{
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-top: 10%;
+    margin-left: 80%;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.cadastromenu div > form > div > button:hover{
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(90, 90, 90, 0.541);
+}
+
+.cadastromenu div > form > div > button:active{
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.541);
+}
+
+.abrircadastro{
+display: flex;
+}
